@@ -154,15 +154,123 @@ span{
     text-align: justify;
 }
 .formulario{
-    background-color: var(--blanco);
-
+    background-color: #FAF8F0;
 }
+ 
 .formularioC{
-    max-width: 450px;
     text-align: center;
+     
 }
-.formulario h2{
+ 
+.formularioC h2{
+    color: var(--rojo);
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+ 
+.descripcion-formulario{
+    color: var(--negro);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+ 
+.bloque-domicilio-info{
+ 
+    min-height: 520px;
+    background-image:
+        linear-gradient(
+            rgba(62,54,63,.35),
+            rgba(62,54,63,.35)
+        ),
+        url("../img/banner.jpg");
+    background-size: cover;
+    background-position: 65% center;
     color: white;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+ 
+.bloque-domicilio-info h2{
+ 
+     font-size: 42px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0,0,0,.20);
+}
+ 
+ 
+.bloque-domicilio-info p{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+ 
+.btn-solicitar{
+    background-color: var(--rojo);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 40px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+ 
+.btn-solicitar:hover{
+    background-color: #b92f2d;
+    color: white;
+}
+.textoF{
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+.textoF b{
+    color: var(--rojo);
+}
+.perro{
+    max-height: 250px;
+    transition: transform 0.5s;
+}
+ .perro:hover{
+    transform: scale(1.05);
+ }
+ .titulo-mapa{
+    color: var(--rojo);
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+ }
+ .mapa-contenedor iframe{
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+ }
+footer{
+    background-image: url(../img/Footer.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 50px 30px;
+}
+footer h2{
+    font-size: 22px;
     font-weight: 700;
 
+}
+footer i{
+    margin-right: 8px;
+}
+@media screen and (max-width: 768px){
+    .logo{width: 70px;}
+    .marca{font-size: 26px;}
+    .banner h1{font-size: 38px;}
+    .banner p{font-size: 20px;}
+    .texto-inicio .textoF{font-size: 19px;}
+    .btn-login-nav{width: 100px; margin-top: 8px;}
+    footer{padding-top: 80px;}
+
+    
 }
